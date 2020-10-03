@@ -5,7 +5,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
  
-df = pd.read_csv('sentiment_review.csv')
+df = pd.read_csv('senti_review_file.csv')
 x = df.iloc[:,0].values # Review column as input
 y = df.iloc[:,1].values # Sentiment column as output
 st.title("Sentiment Analysis On Review")
